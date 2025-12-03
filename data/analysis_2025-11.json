@@ -1,0 +1,585 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2025-12-01T13:02:05.834076",
+    "start_time": 1764621838.854003,
+    "end_time": 1764622925.823386,
+    "duration_seconds": 1086.9693830013275,
+    "threshold": 0.4
+  },
+  "summary": {
+    "total_videos_analyzed": 2286,
+    "valid_dog_noises": 35,
+    "false_positives": 1230,
+    "skipped_silent": 1021,
+    "total_dog_sound_seconds": 70.0,
+    "total_dog_sound_minutes": 1.17,
+    "sound_type_breakdown": {
+      "bow-wow": 25,
+      "bark": 6,
+      "growl": 1,
+      "howl": 3
+    }
+  },
+  "valid_clips": [
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-27/01/living_room/43.24.mp4",
+      "file_name": "43.24.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-27/01/living_room",
+      "confidence": 0.5931,
+      "duration_seconds": 4.0,
+      "sound_type": "bark",
+      "individual_scores": {
+        "bark": 0.5931,
+        "yip": 0.1741,
+        "howl": 0.0255,
+        "bow-wow": 0.3741,
+        "growl": 0.1085,
+        "whimper": 0.0943
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-29/17/living_room/36.06.mp4",
+      "file_name": "36.06.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-29/17/living_room",
+      "confidence": 0.5913,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.223,
+        "yip": 0.2585,
+        "howl": 0.0601,
+        "bow-wow": 0.5913,
+        "growl": 0.0196,
+        "whimper": 0.2363
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-24/17/living_room/29.16.mp4",
+      "file_name": "29.16.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-24/17/living_room",
+      "confidence": 0.5806,
+      "duration_seconds": 4.0,
+      "sound_type": "bark",
+      "individual_scores": {
+        "bark": 0.5806,
+        "yip": 0.1965,
+        "howl": 0.006,
+        "bow-wow": 0.4855,
+        "growl": 0.0572,
+        "whimper": 0.1384
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-27/01/living_room/43.34.mp4",
+      "file_name": "43.34.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-27/01/living_room",
+      "confidence": 0.5761,
+      "duration_seconds": 4.5,
+      "sound_type": "bark",
+      "individual_scores": {
+        "bark": 0.5761,
+        "yip": 0.1053,
+        "howl": 0.0062,
+        "bow-wow": 0.3322,
+        "growl": 0.0408,
+        "whimper": 0.0664
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/34.43.mp4",
+      "file_name": "34.43.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.5478,
+      "duration_seconds": 2.0,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.2462,
+        "yip": 0.2101,
+        "howl": 0.0026,
+        "bow-wow": 0.5478,
+        "growl": 0.0084,
+        "whimper": 0.2103
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/07.52.mp4",
+      "file_name": "07.52.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.5452,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.3279,
+        "yip": 0.2197,
+        "howl": 0.0087,
+        "bow-wow": 0.5452,
+        "growl": 0.0323,
+        "whimper": 0.2431
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/03/living_room/07.52.mp4",
+      "file_name": "07.52.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/03/living_room",
+      "confidence": 0.5452,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.3279,
+        "yip": 0.2197,
+        "howl": 0.0087,
+        "bow-wow": 0.5452,
+        "growl": 0.0323,
+        "whimper": 0.2431
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/04/living_room/07.52.mp4",
+      "file_name": "07.52.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/04/living_room",
+      "confidence": 0.5452,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.3279,
+        "yip": 0.2197,
+        "howl": 0.0087,
+        "bow-wow": 0.5452,
+        "growl": 0.0323,
+        "whimper": 0.2431
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-25/21/living_room/40.22.mp4",
+      "file_name": "40.22.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-25/21/living_room",
+      "confidence": 0.5264,
+      "duration_seconds": 2.0,
+      "sound_type": "bark",
+      "individual_scores": {
+        "bark": 0.5264,
+        "yip": 0.1079,
+        "howl": 0.0153,
+        "bow-wow": 0.2692,
+        "growl": 0.1146,
+        "whimper": 0.0625
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-25/21/living_room_mantle/40.22.mp4",
+      "file_name": "40.22.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-25/21/living_room_mantle",
+      "confidence": 0.5264,
+      "duration_seconds": 2.0,
+      "sound_type": "bark",
+      "individual_scores": {
+        "bark": 0.5264,
+        "yip": 0.1079,
+        "howl": 0.0153,
+        "bow-wow": 0.2692,
+        "growl": 0.1146,
+        "whimper": 0.0625
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-25/22/living_room/51.12.mp4",
+      "file_name": "51.12.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-25/22/living_room",
+      "confidence": 0.5203,
+      "duration_seconds": 3.0,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1488,
+        "yip": 0.1856,
+        "howl": 0.0091,
+        "bow-wow": 0.5203,
+        "growl": 0.0047,
+        "whimper": 0.1827
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/51.12.mp4",
+      "file_name": "51.12.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.5203,
+      "duration_seconds": 3.0,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1488,
+        "yip": 0.1856,
+        "howl": 0.0091,
+        "bow-wow": 0.5203,
+        "growl": 0.0047,
+        "whimper": 0.1827
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-26/23/living_room/04.04.mp4",
+      "file_name": "04.04.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-26/23/living_room",
+      "confidence": 0.5087,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.4329,
+        "yip": 0.2044,
+        "howl": 0.0283,
+        "bow-wow": 0.5087,
+        "growl": 0.0311,
+        "whimper": 0.1231
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/26.03.mp4",
+      "file_name": "26.03.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.5039,
+      "duration_seconds": 3.0,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1551,
+        "yip": 0.1832,
+        "howl": 0.0279,
+        "bow-wow": 0.5039,
+        "growl": 0.0058,
+        "whimper": 0.191
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/32.33.mp4",
+      "file_name": "32.33.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.4892,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.083,
+        "yip": 0.2442,
+        "howl": 0.0082,
+        "bow-wow": 0.4892,
+        "growl": 0.0058,
+        "whimper": 0.2471
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-25/00/living_room/01.57.mp4",
+      "file_name": "01.57.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-25/00/living_room",
+      "confidence": 0.4858,
+      "duration_seconds": 1.5,
+      "sound_type": "growl",
+      "individual_scores": {
+        "bark": 0.0429,
+        "yip": 0.0782,
+        "howl": 0.008,
+        "bow-wow": 0.0599,
+        "growl": 0.4858,
+        "whimper": 0.1178
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/33.53.mp4",
+      "file_name": "33.53.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.4808,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.2955,
+        "yip": 0.2003,
+        "howl": 0.0071,
+        "bow-wow": 0.4808,
+        "growl": 0.02,
+        "whimper": 0.189
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-26/20/living_room/46.44.mp4",
+      "file_name": "46.44.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-26/20/living_room",
+      "confidence": 0.4729,
+      "duration_seconds": 2.5,
+      "sound_type": "bark",
+      "individual_scores": {
+        "bark": 0.4729,
+        "yip": 0.1561,
+        "howl": 0.0178,
+        "bow-wow": 0.4224,
+        "growl": 0.0343,
+        "whimper": 0.1176
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/11.42.mp4",
+      "file_name": "11.42.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.4464,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1181,
+        "yip": 0.2195,
+        "howl": 0.0379,
+        "bow-wow": 0.4464,
+        "growl": 0.0118,
+        "whimper": 0.165
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/04/living_room/11.42.mp4",
+      "file_name": "11.42.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/04/living_room",
+      "confidence": 0.4464,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1181,
+        "yip": 0.2195,
+        "howl": 0.0379,
+        "bow-wow": 0.4464,
+        "growl": 0.0118,
+        "whimper": 0.165
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-21/22/living_room/18.17.mp4",
+      "file_name": "18.17.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-21/22/living_room",
+      "confidence": 0.4447,
+      "duration_seconds": 2.0,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.3078,
+        "yip": 0.1497,
+        "howl": 0.0044,
+        "bow-wow": 0.4447,
+        "growl": 0.0219,
+        "whimper": 0.1118
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-28/18/living_room/18.17.mp4",
+      "file_name": "18.17.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-28/18/living_room",
+      "confidence": 0.4447,
+      "duration_seconds": 2.0,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.3078,
+        "yip": 0.1497,
+        "howl": 0.0044,
+        "bow-wow": 0.4447,
+        "growl": 0.0219,
+        "whimper": 0.1118
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/16.52.mp4",
+      "file_name": "16.52.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.4316,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1424,
+        "yip": 0.2046,
+        "howl": 0.0199,
+        "bow-wow": 0.4316,
+        "growl": 0.0195,
+        "whimper": 0.2617
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room_mantle/16.52.mp4",
+      "file_name": "16.52.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room_mantle",
+      "confidence": 0.4316,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1424,
+        "yip": 0.2046,
+        "howl": 0.0199,
+        "bow-wow": 0.4316,
+        "growl": 0.0195,
+        "whimper": 0.2617
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/03/living_room/16.52.mp4",
+      "file_name": "16.52.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/03/living_room",
+      "confidence": 0.4316,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1424,
+        "yip": 0.2046,
+        "howl": 0.0199,
+        "bow-wow": 0.4316,
+        "growl": 0.0195,
+        "whimper": 0.2617
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/04/living_room/16.52.mp4",
+      "file_name": "16.52.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/04/living_room",
+      "confidence": 0.4316,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1424,
+        "yip": 0.2046,
+        "howl": 0.0199,
+        "bow-wow": 0.4316,
+        "growl": 0.0195,
+        "whimper": 0.2617
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/03/living_room/31.32.mp4",
+      "file_name": "31.32.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/03/living_room",
+      "confidence": 0.4306,
+      "duration_seconds": 3.0,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1824,
+        "yip": 0.1555,
+        "howl": 0.0132,
+        "bow-wow": 0.4306,
+        "growl": 0.0127,
+        "whimper": 0.1434
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/06.23.mp4",
+      "file_name": "06.23.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.4224,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1371,
+        "yip": 0.1457,
+        "howl": 0.01,
+        "bow-wow": 0.4224,
+        "growl": 0.0088,
+        "whimper": 0.1388
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/12.53.mp4",
+      "file_name": "12.53.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.417,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1125,
+        "yip": 0.1471,
+        "howl": 0.011,
+        "bow-wow": 0.417,
+        "growl": 0.0043,
+        "whimper": 0.1152
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-27/19/living_room/05.10.mp4",
+      "file_name": "05.10.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-27/19/living_room",
+      "confidence": 0.4156,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.2115,
+        "yip": 0.1688,
+        "howl": 0.0017,
+        "bow-wow": 0.4156,
+        "growl": 0.0172,
+        "whimper": 0.1948
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/03/living_room/31.22.mp4",
+      "file_name": "31.22.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/03/living_room",
+      "confidence": 0.41,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.2147,
+        "yip": 0.1945,
+        "howl": 0.1731,
+        "bow-wow": 0.41,
+        "growl": 0.0188,
+        "whimper": 0.1884
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-24/23/living_room/59.36.mp4",
+      "file_name": "59.36.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-24/23/living_room",
+      "confidence": 0.4087,
+      "duration_seconds": 1.5,
+      "sound_type": "bow-wow",
+      "individual_scores": {
+        "bark": 0.1295,
+        "yip": 0.2637,
+        "howl": 0.0555,
+        "bow-wow": 0.4087,
+        "growl": 0.0105,
+        "whimper": 0.2559
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-28/18/living_room_mantle/22.14.mp4",
+      "file_name": "22.14.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-28/18/living_room_mantle",
+      "confidence": 0.4006,
+      "duration_seconds": 1.5,
+      "sound_type": "howl",
+      "individual_scores": {
+        "bark": 0.0093,
+        "yip": 0.0846,
+        "howl": 0.4006,
+        "bow-wow": 0.0368,
+        "growl": 0.0018,
+        "whimper": 0.1206
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room/22.14.mp4",
+      "file_name": "22.14.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/02/living_room",
+      "confidence": 0.4006,
+      "duration_seconds": 1.5,
+      "sound_type": "howl",
+      "individual_scores": {
+        "bark": 0.0093,
+        "yip": 0.0846,
+        "howl": 0.4006,
+        "bow-wow": 0.0368,
+        "growl": 0.0018,
+        "whimper": 0.1206
+      }
+    },
+    {
+      "file_path": "/home/azamat/frigate/storage/recordings/2025-11-30/03/living_room/17.12.mp4",
+      "file_name": "17.12.mp4",
+      "directory": "/home/azamat/frigate/storage/recordings/2025-11-30/03/living_room",
+      "confidence": 0.4,
+      "duration_seconds": 1.5,
+      "sound_type": "howl",
+      "individual_scores": {
+        "bark": 0.1866,
+        "yip": 0.2982,
+        "howl": 0.4,
+        "bow-wow": 0.2817,
+        "growl": 0.0223,
+        "whimper": 0.2601
+      }
+    }
+  ]
+}
