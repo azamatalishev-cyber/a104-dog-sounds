@@ -1,0 +1,92 @@
+# Pre-commit hooks for security scanning
+# Install: pip install pre-commit && pre-commit install
+# Run manually: pre-commit run --all-files
+
+repos:
+  # Secret scanning
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        name: Detect secrets
+        args: ['--baseline', '.secrets.baseline']
+        exclude: package-lock.json
+
+  # Git checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+      - id: check-json
+      - id: check-yaml
+        args: ['--unsafe']  # Allow custom YAML tags
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+
+  # Terraform security
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.96.1
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_validate
+      - id: terraform_tflint
+        args:
+          - --args=--config=__GIT_WORKING_DIR__/terraform/.tflint.hcl
+      - id: terraform_tfsec
+        args:
+          - --args=--minimum-severity=HIGH
+
+  # Docker security
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.12.0
+    hooks:
+      - id: hadolint-docker
+        name: Lint Dockerfile
+        args: ['--ignore', 'DL3008', '--ignore', 'DL3009']
+
+  # Custom npm audit hook
+  - repo: local
+    hooks:
+      - id: npm-audit
+        name: npm audit
+        entry: scripts/npm-audit-check.sh
+        language: system
+        files: 'package(-lock)?\.json'
+        pass_filenames: false
+
+      - id: npm-outdated-check
+        name: Check for critical outdated packages
+        entry: scripts/npm-outdated-check.sh
+        language: system
+        files: 'package(-lock)?\.json'
+        pass_filenames: false
+        verbose: true
+
+      - id: dockerfile-security-check
+        name: Check Dockerfile security best practices
+        entry: scripts/check-dockerfile-security.sh
+        language: system
+        files: 'Dockerfile.*'
+        pass_filenames: false
+
+      - id: env-file-check
+        name: Prevent committing .env files
+        entry: scripts/check-env-files.sh
+        language: system
+        pass_filenames: false
+
+      - id: aws-credentials-check
+        name: Check for AWS credentials
+        entry: scripts/check-aws-credentials.sh
+        language: system
+        pass_filenames: false
+
+      - id: terraform-secrets-check
+        name: Check Terraform files for secrets
+        entry: scripts/check-terraform-secrets.sh
+        language: system
+        pass_filenames: false

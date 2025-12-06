@@ -90,7 +90,7 @@ resource "aws_security_group" "dog_sounds_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["98.147.218.157/32"]  # Only allow SSH from your Mac
+    cidr_blocks = ["98.147.218.157/32"] # Only allow SSH from your Mac
   }
 
   egress {
@@ -107,10 +107,10 @@ resource "aws_security_group" "dog_sounds_sg" {
 
 # EC2 Instance
 resource "aws_instance" "dog_sounds" {
-  ami                    = var.ami_id  # Ubuntu 22.04 LTS
+  ami                    = var.ami_id # Ubuntu 22.04 LTS
   instance_type          = var.instance_type
-  key_name              = aws_key_pair.azamat_key.key_name
-  iam_instance_profile  = aws_iam_instance_profile.ec2_profile.name
+  key_name               = aws_key_pair.azamat_key.key_name
+  iam_instance_profile   = aws_iam_instance_profile.ec2_profile.name
   vpc_security_group_ids = [aws_security_group.dog_sounds_sg.id]
 
   user_data = templatefile("${path.module}/user-data.sh", {
